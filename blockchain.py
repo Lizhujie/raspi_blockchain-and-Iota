@@ -10,7 +10,7 @@ class Blockchain(object):
         self.chain = []
         self.current_transactions = []
         self.nodes = set()
-        # 创建创世区块
+        # the first block
         self.new_block(previous_hash=1, proof=100)
 
     def register_node(self, address):
@@ -87,10 +87,10 @@ class Blockchain(object):
     def new_block(self, proof, previous_hash=None):
         # Creates a new Block and adds it to the chain
         """
-        创建一个新的区块到区块链中
-        :param proof: <int> 由工作证明算法生成的证明
-        :param previous_hash: (Optional) <str> 前一个区块的 hash 值
-        :return: <dict> 新区块
+        
+        :param proof: <int> 
+        :param previous_hash: (Optional) <str> 
+        :return: <dict> 
         """
 
         block = {
@@ -101,7 +101,7 @@ class Blockchain(object):
             'previous_hash': previous_hash or self.hash(self.chain[-1])
         }
 
-        # 重置当前交易记录
+        # reset transaction
         self.current_transactions = []
 
         self.chain.append(block)
@@ -130,12 +130,12 @@ class Blockchain(object):
     def hash(block):
         # Hashes a Block
 
-        """给一个区块生成 SHA-256 值
+        """create SHA-256 value
         :param block: <dict> Block
         :return: <str>"""
 
 
-        # 我们必须确保这个字典（区块）是经过排序的，否则我们将会得到不一致的散列
+        # sort
         block_string = json.dumps(block, sort_keys=True).encode()
         return hashlib.sha256(block_string).hexdigest()
 
