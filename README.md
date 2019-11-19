@@ -1,6 +1,6 @@
 # raspi_blockchain-and-Iota
 
-Blockchain Demo(based on: https://blog.csdn.net/qq_42370150/article/details/101686890): run blockchain.py in terminal and then start a new terminal and enter: 
+Blockchain Demo: run blockchain.py in terminal and then start a new terminal and enter: 
 
 curl -X POST -H "Content-Type: application/json" -d '{
  "sender": "d4ee26eee15148ee92c6cd394edd974e",
