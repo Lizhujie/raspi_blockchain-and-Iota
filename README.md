@@ -1,7 +1,7 @@
 # Raspi_Blockchain_And_Iota
 
 ## Blockchain Demo : 
-    run blockchain.py in terminal and then start a new terminal and enter: 
+    Run blockchain.py in terminal and then start a new terminal and enter: 
     In the command line to post
     curl -X POST -H "Content-Type: application/json" -d '{
     "sender": "d4ee26eee15148ee92c6cd394edd974e",
