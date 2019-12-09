@@ -1,4 +1,4 @@
-# raspi_blockchain-and-Iota
+# Raspi_Blockchain_And_Iota
 
 ## Blockchain Demo : 
     run blockchain.py in terminal and then start a new terminal and enter: 
@@ -17,5 +17,4 @@
     In that code, the address is seted for LED service(You can use some iota wallet to create, such as trinity). 
     If we want to use that service, we can use our iota account to send tokens to that address. When the transaction is authorized,
     You can see the number displayed in terminal turns to the number that you send to the iota address of LED service. And the LED would turn on. 
-    And depend on your service time, the balance would decrease. When the balance becomes to zero, the LED would 
-turn off. 
+    And depend on your service time, the balance would decrease. When the balance becomes to zero, the LED would turn off. 
